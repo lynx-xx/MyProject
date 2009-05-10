@@ -1,0 +1,19 @@
+<% for hospital in @hospitals %>
+  <h2><%= hospital.full_name %></h2>
+  <h3><%= hospital.short_name %></h3>
+  <p>
+    Phone: <%= hospital.phone %><br>
+    Address: <%= hospital.address %><br>
+  </p>
+  <small>
+    <%= link_to "more",
+      :action => "show",
+      :id => hospital %>
+  </small>
+  <hr>
+
+<% end %>
+
+<br />
+
+<%= link_to 'New hospital', new_hospital_path %>

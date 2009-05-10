@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  full_name: MyString
+  short_name: MyString
+  phone: MyString
+  fax: MyString
+  address: MyText
+  maps_latitude: 1.5
+  maps_longitude: 1.5
+  url: MyString
+  email: MyString
+  image: 
+
+two:
+  full_name: MyString
+  short_name: MyString
+  phone: MyString
+  fax: MyString
+  address: MyText
+  maps_latitude: 1.5
+  maps_longitude: 1.5
+  url: MyString
+  email: MyString
+  image: 

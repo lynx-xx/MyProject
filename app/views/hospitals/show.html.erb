@@ -1,0 +1,58 @@
+<p>
+  <b>Full name:</b>
+  <%=h @hospital.full_name %>
+</p>
+
+<p>
+  <b>Short name:</b>
+  <%=h @hospital.short_name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @hospital.phone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%=h @hospital.fax %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @hospital.address %>
+</p>
+
+<p>
+  <b>Maps latitude:</b>
+  <%=h @hospital.maps_latitude %>
+</p>
+
+<p>
+  <b>Maps longitude:</b>
+  <%=h @hospital.maps_longitude %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @hospital.url %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @hospital.email %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%=h @hospital.image %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%=h @hospital.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_hospital_path(@hospital) %> |
+<%= link_to 'Back', hospitals_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  hospital_id: 1
+  facility_type_id: 1
+  description: MyText
+
+two:
+  hospital_id: 1
+  facility_type_id: 1
+  description: MyText

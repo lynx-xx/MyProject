@@ -1,0 +1,10 @@
+<h2>New hospital</h2>
+
+<% form_for(@hospital) do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => "form", :locals => { :f => f, :label_text => "Create"} %>
+<% end %>
+
+<%= link_to 'Back', hospitals_path %>
+

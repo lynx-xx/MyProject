@@ -1,0 +1,4 @@
+<% for facility in @facilities %>
+  <% #There is probably a much much better way to do this %>
+  <p><%= @hospitals[facility.hospital_id - 1].full_name %></p>
+<% end %>

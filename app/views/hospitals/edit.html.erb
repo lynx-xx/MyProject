@@ -1,0 +1,11 @@
+<h2>Editing hospital</h2>
+
+<% form_for(@hospital) do |f| %>
+  <%= f.error_messages %>
+  
+  <%= render :partial => "form", :locals => { :f => f, :label_text => "Update"} %>
+<% end %>
+
+<%= link_to 'Show', @hospital %> |
+<%= link_to 'Back', hospitals_path %>
+
