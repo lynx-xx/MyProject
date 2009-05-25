@@ -6,11 +6,13 @@ class CreateHospitals < ActiveRecord::Migration
       t.string :phone
       t.string :fax
       t.text :address
+      t.string :region
       t.float :maps_latitude
       t.float :maps_longitude
       t.string :url
       t.string :email
-      t.binary :image
+      t.text :note
+      t.string :image
 
       t.timestamps
     end

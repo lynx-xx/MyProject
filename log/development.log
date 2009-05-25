@@ -1296,3 +1296,1157 @@ Rendering template within layouts/application
 Rendering hospitals/index
   [4;35;1mHospital Columns (27.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
 Completed in 2096ms (View: 1924, DB: 120) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (27.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateHospitals (20090425164840)
+  [4;35;1mSQL (24.0ms)[0m   [0mCREATE TABLE `hospitals` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `full_name` varchar(255), `short_name` varchar(255), `phone` varchar(255), `fax` varchar(255), `address` text, `maps_latitude` float, `maps_longitude` float, `url` varchar(255), `email` varchar(255), `image` blob, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (26.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090425164840')[0m
+Migrating to AddNoteToHospital (20090425165434)
+  [4;35;1mSQL (54.0ms)[0m   [0mALTER TABLE `hospitals` ADD `note` text[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090425165434')[0m
+Migrating to AddImageToHospital (20090425210939)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Duplicate column name 'image': ALTER TABLE `hospitals` ADD `image` varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHospitals (20090425164840)
+Migrating to AddNoteToHospital (20090425165434)
+Migrating to AddImageToHospital (20090425210939)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'image': ALTER TABLE `hospitals` ADD `image` varchar(255)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHospitals (20090425164840)
+Migrating to AddNoteToHospital (20090425165434)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (22.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hospitals`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hospitals`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHospitals (20090425164840)
+Migrating to AddNoteToHospital (20090425165434)
+Migrating to AddImageToHospital (20090425210939)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'image': ALTER TABLE `hospitals` ADD `image` varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFacilities (20090427195625)
+Migrating to CreateFacilityTypes (20090426165246)
+Migrating to CreateHospitals (20090425164840)
+  [4;36;1mSQL (3.0ms)[0m   [0;1mDROP TABLE `hospitals`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090425164840'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHospitals (20090425164840)
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE `hospitals` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `full_name` varchar(255), `short_name` varchar(255), `phone` varchar(255), `fax` varchar(255), `address` text, `region` varchar(255), `maps_latitude` float, `maps_longitude` float, `url` varchar(255), `email` varchar(255), `note` text, `image` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090425164840')[0m
+Migrating to CreateFacilityTypes (20090426165246)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE `facility_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090426165246')[0m
+Migrating to CreateFacilities (20090427195625)
+  [4;36;1mSQL (17.0ms)[0m   [0;1mCREATE TABLE `facilities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `hospital_id` int(11), `facility_type_id` int(11), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090427195625')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW FIELDS FROM `facilities`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mdescribe `facilities`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `facilities`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW FIELDS FROM `facility_types`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `facility_types`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `facility_types`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `hospitals`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `hospitals`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 21:58:59) [GET]
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+Completed in 2143ms (View: 2065, DB: 0) | 200 OK [http://localhost/hospitals/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#images to png (for 127.0.0.1 at 2009-05-25 21:59:03) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:00:46) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/hospitals/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:01:07) [GET]
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (8.0ms)
+Completed in 87ms (View: 74, DB: 2) | 200 OK [http://localhost/hospitals/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#create (for 127.0.0.1 at 2009-05-25 22:01:42) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"6xyGWC6aU7HfHVtc+bSmKmtwc198NkDQ1RrGpj3U56c=", "hospital"=>{"maps_longitude"=>"", "url"=>"http://www.nmh.ie/", "note"=>"This is a test", "fax"=>"test", "phone"=>"016373550", "short_name"=>"NMH", "image"=>"test.jpg", "maps_latitude"=>"", "address"=>"This is a test", "full_name"=>"National Maternity Hospital", "email"=>"info@nmh.ie"}}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHospital Exists (14.0ms)[0m   [0mSELECT `hospitals`.id FROM `hospitals` WHERE (`hospitals`.`full_name` = BINARY 'National Maternity Hospital') LIMIT 1[0m
+  [4;36;1mHospital Exists (0.0ms)[0m   [0;1mSELECT `hospitals`.id FROM `hospitals` WHERE (`hospitals`.`short_name` = BINARY 'NMH') LIMIT 1[0m
+  [4;35;1mHospital Create (1.0ms)[0m   [0mINSERT INTO `hospitals` (`maps_longitude`, `updated_at`, `region`, `url`, `short_name`, `phone`, `fax`, `note`, `full_name`, `address`, `maps_latitude`, `image`, `email`, `created_at`) VALUES(NULL, '2009-05-25 21:01:42', NULL, 'http://www.nmh.ie/', 'NMH', '016373550', 'test', 'This is a test', 'National Maternity Hospital', 'This is a test', NULL, 'test.jpg', 'info@nmh.ie', '2009-05-25 21:01:42')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/hospitals/1
+Completed in 34ms (DB: 19) | 302 Found [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:01:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:01:54) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 16ms (View: 7, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:02:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 19ms (View: 7, DB: 4) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:02:05) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 16ms (View: 7, DB: 2) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:05:12) [GET]
+  Parameters: {"search_string"=>"test", "id"=>"search"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:08:22) [GET]
+  Parameters: {"search_string"=>"test", "id"=>"search"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:08:31) [GET]
+  Parameters: {"id"=>"search"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:08:40) [GET]
+  Parameters: {"id"=>"search"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:08:46) [GET]
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (3.0ms)
+Completed in 19ms (View: 8, DB: 4) | 200 OK [http://localhost/hospitals/new/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:08:53) [GET]
+  Parameters: {"id"=>"search"}
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:09:08) [GET]
+  Parameters: {"id"=>"search"}
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:09:11) [GET]
+  Parameters: {"id"=>"search"}
+  [4;36;1mHospital Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Hospital with ID=search):
+  app/controllers/hospitals_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#search (for 127.0.0.1 at 2009-05-25 22:10:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+
+ActionView::MissingTemplate (Missing template hospitals/search.erb in view path app/views):
+  app/controllers/hospitals_controller.rb:91:in `search'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#search (for 127.0.0.1 at 2009-05-25 22:11:12) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to search. Actions: create, destroy, edit, index, new, show, and update):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:11:28) [GET]
+  Parameters: {"search_string"=>"Test"}
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 9, DB: 6) | 200 OK [http://localhost/hospitals/?search_string=Test]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:21:57) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 2ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/hospitals/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:22:03) [GET]
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (3.0ms)
+Completed in 20ms (View: 10, DB: 4) | 200 OK [http://localhost/hospitals/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:22:12) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 24ms (View: 11, DB: 5) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:22:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 24ms (View: 9, DB: 4) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#edit (for 127.0.0.1 at 2009-05-25 22:22:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/edit
+Rendered hospitals/_form (4.0ms)
+Completed in 96ms (View: 81, DB: 6) | 200 OK [http://localhost/hospitals/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:22:18) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 19ms (View: 6, DB: 5) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:22:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 28ms (View: 8, DB: 8) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:22:21) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 25ms (View: 10, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:24:10) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 20ms (View: 11, DB: 5) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:25:03) [GET]
+  Parameters: {"search_string"=>"test"}
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://localhost/hospitals/?search_string=test]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:25:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 15ms (View: 5, DB: 3) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:25:39) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 70ms (View: 7, DB: 4) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:26:03) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:26:14) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:26:21) [GET]
+  Parameters: {"search_string"=>"test"}
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 21ms (View: 9, DB: 3) | 200 OK [http://localhost/hospitals/?search_string=test]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:26:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 17ms (View: 5, DB: 5) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:26:24) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 23ms (View: 10, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:36:05) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+
+ActionView::TemplateError (undefined local variable or method `admin' for #<ActionView::Base:0xc6908dc>) on line #37 of app/views/layouts/application.html.erb:
+34:       <hr>
+35:       <div class="span-12 first">
+36:         <p class="small quiet">
+37:           [about] &nbsp; [contact us] &nbsp; [copyright] &nbsp; [terms of use] &nbsp; <%= link_to "admin", :action => "index",:id => admin %>
+38:         </p>
+39:       </div>
+40:       <div class="span-12 last">
+
+    app/views/layouts/application.html.erb:37
+    app/controllers/hospitals_controller.rb:9:in `index'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 22:37:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (0.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:37:50) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 10, DB: 2) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:39:01) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 21ms (View: 12, DB: 4) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:40:26) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 13, DB: 2) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:40:29) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:41:12) [GET]
+  Parameters: {"search_string"=>"test"}
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 47ms (View: 24, DB: 2) | 200 OK [http://localhost/hospitals/?search_string=test]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:41:15) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:41:18) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 6ms (View: 2, DB: 1) | 401 Unauthorized [http://localhost/hospitals/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:41:29) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:41:45) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 6ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:41:45) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:42:14) [GET]
+  Parameters: {"search_string"=>"test"}
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 20ms (View: 8, DB: 4) | 200 OK [http://localhost/hospitals/?search_string=test]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:42:18) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 9ms (View: 2, DB: 0) | 401 Unauthorized [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:42:27) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:42:29) [GET]
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (12.0ms)
+Completed in 69ms (View: 39, DB: 3) | 200 OK [http://localhost/hospitals/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:42:32) [GET]
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/hospitals]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:42:37) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:42:43) [GET]
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (12.0ms)
+Completed in 70ms (View: 39, DB: 3) | 200 OK [http://localhost/hospitals/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:43:29) [GET]
+  Parameters: {"search_string"=>"test"}
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 16ms (View: 6, DB: 4) | 200 OK [http://localhost/hospitals/?search_string=test]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:43:31) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:43:33) [GET]
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (2.0ms)
+
+ActionView::TemplateError (admin_url failed to generate from {:controller=>"admin", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["admin", :id] - are they all satisfied?) on line #9 of app/views/hospitals/new.html.erb:
+6:   <%= render :partial => "form", :locals => { :f => f, :label_text => "Create"} %>
+7: <% end %>
+8: 
+9: <%= link_to 'Back', admin_path %>
+
+    (eval):16:in `admin_path'
+    app/views/hospitals/new.html.erb:9
+    app/controllers/hospitals_controller.rb:31:in `new'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 22:44:00) [GET]
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (2.0ms)
+Completed in 22ms (View: 13, DB: 3) | 200 OK [http://localhost/hospitals/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:45:57) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FacilityTypesController#new (for 127.0.0.1 at 2009-05-25 22:45:59) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: index):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:50:30) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:51:35) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 15ms (View: 7, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:52:16) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:52:17) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:52:24) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 21ms (View: 12, DB: 4) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:52:29) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 28ms (View: 16, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:52:46) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 28ms (View: 16, DB: 5) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:52:59) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 29ms (View: 17, DB: 4) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:53:13) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 28ms (View: 16, DB: 2) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:54:09) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:54:18) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 21ms (View: 9, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:54:24) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 17ms (View: 6, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:54:37) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 10, DB: 2) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:54:45) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:54:51) [GET]
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 16ms (View: 8, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:55:52) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 22:56:05) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 16ms (View: 6, DB: 3) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 22:56:46) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 23:00:00) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 23:00:04) [GET]
+  Parameters: {"search_string"=>"Test"}
+  [4;35;1mHospital Load (1.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://localhost/hospitals/?search_string=Test]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#show (for 127.0.0.1 at 2009-05-25 23:00:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/show
+Completed in 18ms (View: 6, DB: 5) | 200 OK [http://localhost/hospitals/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#edit (for 127.0.0.1 at 2009-05-25 23:00:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` WHERE (`hospitals`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering hospitals/edit
+Rendered hospitals/_form (4.0ms)
+Completed in 28ms (View: 14, DB: 5) | 200 OK [http://localhost/hospitals/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 23:00:12) [GET]
+  [4;35;1mHospital Load (0.0ms)[0m   [0mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;36;1mHospital Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `hospitals`[0m
+Completed in 23ms (View: 10, DB: 2) | 200 OK [http://localhost/hospitals]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 23:00:14) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/admin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#new (for 127.0.0.1 at 2009-05-25 23:00:15) [GET]
+  [4;35;1mHospital Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Rendering template within layouts/application
+Rendering hospitals/new
+Rendered hospitals/_form (2.0ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://localhost/hospitals/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-05-25 23:00:17) [GET]
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HospitalsController#index (for 127.0.0.1 at 2009-05-25 23:00:33) [GET]
+  [4;36;1mHospital Load (1.0ms)[0m   [0;1mSELECT * FROM `hospitals` [0m
+Rendering template within layouts/application
+Rendering hospitals/index
+  [4;35;1mHospital Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `hospitals`[0m
+Completed in 17ms (View: 8, DB: 3) | 200 OK [http://localhost/hospitals]

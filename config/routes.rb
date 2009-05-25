@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :hospitals
   map.resources :facility_types
   map.resources :facilities
+  map.resources :admin
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

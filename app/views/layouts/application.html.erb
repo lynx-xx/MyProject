@@ -1,23 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Hospitals: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'screen.css' %>
-  <!--[if IE]>
-    <%= stylesheet_link_tag 'ie.css' %>
-  <![endif]-->
-  <%= stylesheet_link_tag 'custom' %>
-</head>
-<body>
-  <br>
-  <div class="container">
-    <h1>HospitalPages.ie</h1>
-    <p style="color: green"><%= flash[:notice] %></p>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>HospitalPages.ie - <%= controller.action_name %></title>
 
-    <%= yield %>
-  </div>
-</body>
+    <!-- Framework CSS -->
+      <%= stylesheet_link_tag 'screen.css' %>
+      <%= stylesheet_link_tag 'plugins.css' %>
+    <!--[if IE]>
+      <%= stylesheet_link_tag 'ie.css' %>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <%= stylesheet_link_tag 'custom' %>
+  </head>
+  <body>
+    <p><br></p>
+    <div class="container">
+      <a href="/">
+        <%= image_tag "logo.png", :alt => 'HospitalPages.ie' %>
+      </a>
+      <h4 class="tag">The Central Directory for Hospital Information in Ireland</h4>
+      <hr>
+      <br>
+      <div class="span-24">
+        <p style="color: green"><%= flash[:notice] %></p>
+        <%= yield %>
+      </div>
+      <div class="clear"></div>
+      <br><br><br>
+      <hr>
+      <div class="span-12 first">
+        <p class="small quiet">
+          <a href="/">[home]</a> &nbsp; <a href="#">[about]</a> &nbsp; <a href="#">[contact us]</a> &nbsp; <a href="#">[copyright]</a> &nbsp; <a href="#">[terms of use]</a> &nbsp; <%= link_to "[admin]", { :controller => "admin" } %>
+        </p>
+      </div>
+      <div class="span-12 last">
+        <p class="small quiet right">
+          Copyright 2009 HospitalPages.ie. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

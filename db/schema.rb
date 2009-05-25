@@ -29,14 +29,15 @@ ActiveRecord::Schema.define(:version => 20090427195625) do
     t.string   "phone"
     t.string   "fax"
     t.text     "address"
+    t.string   "region"
     t.float    "maps_latitude"
     t.float    "maps_longitude"
     t.string   "url"
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.text     "note"
     t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

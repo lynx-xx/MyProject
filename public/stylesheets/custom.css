@@ -1,3 +1,33 @@
+/*
+    Input
+*/
+input.search {
+    height: 40px;
+    font-size: 3em;
+}
+button.search {
+    height: 30px;
+    font-size: 1.3em;
+}
+
+/*
+    Text Styling
+*/
+p.right {
+    text-align: right;
+}
+a {
+    color: #666;
+}
+.tag {
+    padding-left: 10px;
+    font-size: 80%;
+    color: #666;
+    font-style: italic;
+}
+/*
+    Default Rails error reporting style
+*/
 .fieldWithErrors {
   padding: 2px;
   border-color: red;

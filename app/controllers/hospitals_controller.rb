@@ -1,4 +1,6 @@
 class HospitalsController < ApplicationController
+  before_filter :authenticate, :except => [:index, :show]
+
   # GET /hospitals
   # GET /hospitals.xml
   def index
@@ -80,6 +82,14 @@ class HospitalsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(hospitals_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  private
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |name, password|
+      name == "admin" && password == "lynxweb1"
     end
   end
 end
