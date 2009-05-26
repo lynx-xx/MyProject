@@ -1,0 +1,12 @@
+HospitalPages.ie ChangeLog
+
+Version 0.0.3
+
+25-May-2009
+- Added static frontpage with basic search box
+- Integrated header and footer to layout
+- Added non functional links to desired static pages (about, contact etc)
+- Tidied up migration scripts
+- Added Region (will be used for County in Ireland)
+- Added example tag line (The Central Directory for Hospital Information in Ireland)
+- Integrated Blueprint CSS plugin for buttons
