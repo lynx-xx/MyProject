@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  hospital_id: 1
+  days: MyString
+  hours: MyString
+
+two:
+  hospital_id: 1
+  days: MyString
+  hours: MyString
