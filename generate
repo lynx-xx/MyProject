@@ -1,0 +1,355 @@
+Script started on Sun 17 May 2009 20:28:52 IST
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+rake aborted!
+Access denied for user 'hospita_lynxweb'@'localhost' (using password: YES)
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `hospital_id' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7f37822c26b0>
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `hospital_id' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7fe47447f800>
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migratecap deploy:coldsetup[1Pcoldsetup[1Pcold[7Pgit pushcommit -a -m 'coorrecting deploy file, once and for all'[A]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ [C[C[C[Cdiff[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatuscap deploy:coldd HospitalPages/[5Pgit_repo/hospitalpages/[5Pgit_repo/HospitalPages/[2Pap deploy:cold[5Pgit status[2Pdiffcommit -a -m 'coorrecting deploy file, once and for all'[A]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ [C[C[C[Cpush[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccap deploy:coldsetup[1Pcoldsetup[1Pcoldrake db:migrate[Krake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `hospital_id' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7f86d937a480>
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `hospital_id' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7ffce1fab488>
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `facility_type_id' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7f735c724260>
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `description' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7f9714f696b0>
+
+(See full trace by running task with --trace)
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate --t race
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `description' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7fad50df65b0>
+./db/migrate//20090517190735_create_facilities.rb:4:in `up_without_benchmarks'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/schema_statements.rb:104:in `create_table'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:473:in `create_table'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:352:in `send'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:352:in `method_missing'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:328:in `say_with_time'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:328:in `say_with_time'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:348:in `method_missing'
+./db/migrate//20090517190735_create_facilities.rb:3:in `up_without_benchmarks'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:282:in `send'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:282:in `migrate'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:282:in `migrate'
+(__DELEGATION__):2:in `__send__'
+(__DELEGATION__):2:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:486:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `ddl_transaction'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:485:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `each'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:400:in `up'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:383:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/tasks/databases.rake:116
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `call'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:578:in `invoke_with_call_chain'
+/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:571:in `invoke_with_call_chain'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:564:in `invoke'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2027:in `invoke_task'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1999:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1977:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1974:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/bin/rake:31
+/usr/bin/rake:19:in `load'
+/usr/bin/rake:19
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ [K]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ [K]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate --trace
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `hospital_id' for #<ActiveRecord::ConnectionAdapters::TableDefinition:0x7f2d37ad6298>
+./db/migrate//20090517190735_create_facilities.rb:4:in `up_without_benchmarks'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/schema_statements.rb:104:in `create_table'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:473:in `create_table'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:352:in `send'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:352:in `method_missing'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:328:in `say_with_time'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:328:in `say_with_time'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:348:in `method_missing'
+./db/migrate//20090517190735_create_facilities.rb:3:in `up_without_benchmarks'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:282:in `send'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:282:in `migrate'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:282:in `migrate'
+(__DELEGATION__):2:in `__send__'
+(__DELEGATION__):2:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:486:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `ddl_transaction'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:485:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `each'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:400:in `up'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:383:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/tasks/databases.rake:116
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `call'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:578:in `invoke_with_call_chain'
+/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:571:in `invoke_with_call_chain'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:564:in `invoke'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2027:in `invoke_task'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1999:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1977:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1974:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/bin/rake:31
+/usr/bin/rake:19:in `load'
+/usr/bin/rake:19
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate --trace
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+==  CreateFacilities: migrating ===============================================
+-- create_table(:facilities)
+   -> 0.0113s
+==  CreateFacilities: migrated (0.0115s) ======================================
+
+rake aborted!
+./db/migrate//20090517190848_create_facility_types.rb:4: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :name, :string
+                      ^
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:373:in `load_migration'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:369:in `migration'
+(__DELEGATION__):2:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:486:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `ddl_transaction'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:485:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `each'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:400:in `up'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:383:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/tasks/databases.rake:116
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `call'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:578:in `invoke_with_call_chain'
+/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:571:in `invoke_with_call_chain'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:564:in `invoke'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2027:in `invoke_task'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1999:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1977:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1974:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/bin/rake:31
+/usr/bin/rake:19:in `load'
+/usr/bin/rake:19
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate --trace
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+==  CreateFacilityTypes: migrating ============================================
+-- create_table(:facility_types)
+   -> 0.0097s
+==  CreateFacilityTypes: migrated (0.0101s) ===================================
+
+rake aborted!
+./db/migrate//20090517191305_create_hospitals.rb:4: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :full_name, :string
+                           ^
+./db/migrate//20090517191305_create_hospitals.rb:5: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :short_name, :string
+                            ^
+./db/migrate//20090517191305_create_hospitals.rb:6: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :phone, :string
+                       ^
+./db/migrate//20090517191305_create_hospitals.rb:7: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :fax, :string
+                     ^
+./db/migrate//20090517191305_create_hospitals.rb:8: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :address, :text
+                         ^
+./db/migrate//20090517191305_create_hospitals.rb:9: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :note, :text
+                      ^
+./db/migrate//20090517191305_create_hospitals.rb:10: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :maps_latitude, :float
+                               ^
+./db/migrate//20090517191305_create_hospitals.rb:11: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :maps_longitude, :float
+                                ^
+./db/migrate//20090517191305_create_hospitals.rb:12: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :url, :string
+                     ^
+./db/migrate//20090517191305_create_hospitals.rb:13: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+      t.column, :email, :string
+                       ^
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:145:in `load'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:373:in `load_migration'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:369:in `migration'
+(__DELEGATION__):2:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:486:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:562:in `ddl_transaction'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:485:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `each'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:472:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:400:in `up'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/migration.rb:383:in `migrate'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/tasks/databases.rake:116
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `call'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:617:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:612:in `execute'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:578:in `invoke_with_call_chain'
+/usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:571:in `invoke_with_call_chain'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:564:in `invoke'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2027:in `invoke_task'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `each'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2005:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1999:in `top_level'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1977:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:2044:in `standard_exception_handling'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/lib/rake.rb:1974:in `run'
+/usr/lib/ruby/gems/1.8/gems/rake-0.8.4/bin/rake:31
+/usr/bin/rake:19:in `load'
+/usr/bin/rake:19
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate --trace
+(in /home/tom/Sites/hospitalpages/git_repo/HospitalPages)
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+==  CreateHospitals: migrating ================================================
+-- create_table(:hospitals)
+   -> 0.0063s
+==  CreateHospitals: migrated (0.0066s) =======================================
+
+** Invoke db:schema:dump (first_time)
+** Invoke environment 
+** Execute db:schema:dump
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ rake db:migrate --trace[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit status
+[?1h=# On branch master[m
+# Changed but not updated:[m
+#   (use "git add <file>..." to update what will be committed)[m
+#[m
+#       modified:   app/models/facility.rb[m
+#       modified:   app/models/facility_type.rb[m
+#       modified:   app/models/hospital.rb[m
+#       modified:   config/database.yml~[m
+#       modified:   config/environment.rb[m
+#       modified:   db/migrate/20090517190735_create_facilities.rb[m
+#       modified:   db/migrate/20090517190848_create_facility_types.rb[m
+#       modified:   db/migrate/20090517191305_create_hospitals.rb[m
+#[m
+# Untracked files:[m
+#   (use "git add <file>..." to include in what will be committed)[m
+#[m
+#       app/models/facility.rb~[m
+#       app/models/facility_type.rb~[m
+#       app/models/hospital.rb~[m
+#       config/environment.rb~[m
+#       db/migrate/20090517190735_create_facilities.rb~[m
+#       db/migrate/20090517190848_create_facility_types.rb~[m
+#       db/migrate/20090517191305_create_hospitals.rb~[m
+#       db/schema.rb[m
+#       generate[m
+no changes added to commit (use "git add" and/or "git commit -a")[m
+[K[?1l>]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ git add .
+]0;tom@tom-laptop: ~/Sites/hospitalpages/git_repo/HospitalPagestom@tom-laptop:~/Sites/hospitalpages/git_repo/HospitalPages$ git commit -a -m 'updated miga[Kration f

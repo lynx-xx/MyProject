@@ -36,7 +36,7 @@ a {
 
 #errorExplanation {
   width: 400px;
-  border: 2px solid red;
+  border: 2px solid #666;
   padding: 7px;
   padding-bottom: 12px;
   margin-bottom: 20px;
@@ -62,4 +62,11 @@ a {
 #errorExplanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+div.errorDialog {
+  width: 25em;
+  padding: 0 4em;
+  margin: 4em auto 0 auto;
+  text-align: center;
 }

@@ -2,6 +2,12 @@ HospitalPages.ie ChangeLog
 
 Version 0.0.3
 
+27-May-2009
+- Created migration files for all tables in db structure
+- Added default hospital image
+- Created Admin section for adding new information
+   # Uses basic http authentication for now
+
 25-May-2009
 - Added static frontpage with basic search box
 - Integrated header and footer to layout

@@ -1,0 +1,47 @@
+Git instructions for hospitalpages.ie:
+
+Assumes git is installed and have ssh access working,
+http://www.hostingrails.com/wiki/27/HowTo-SSHSCP-without-a-password
+
+Create branches on local setup only, test changes on local branches.  Once happy merge changes onto local master and push to server master.
+
+Initial setup:
+#clone the repository to local machine
+$ git clone hospita@hospitalpages.ie:/home/hospita/git/HospitalPages /path/to/where local repo will be
+
+Creating new branch and updating remote master branch:
+#create local branch based off master just cloned
+$git branch mynewbranch
+
+#switch to new branch, check branch status anytime using $git status
+$git checkout mynewbranch
+
+#make changes on the new branch when happy with changes commit to mynewbranc
+# -a means add all changed files, -m is for commit message
+$git commit -a -m "new changes"
+
+#once all changes are made for a unit of work or a day, merge mynewbranch into master
+#to do this first switch to master
+$git checkout master
+
+#then synch local master with remote master in case other users have added new content to the remote master
+#if you get message "Already up to date" you'll have no potential conflicts
+$git pull
+
+#to do a test merge with no commits use, to see if it is what you expect do
+$git merge --no-commit --no-ff mynewbranch
+
+#now merge locally, your local branch with local master
+$git merge mynewbranch
+
+#do the real thing
+$git merge mynewbranch
+
+#resolve conflicts if there are any
+
+#push local master to remote
+$git push
+
+NB: update working tree on server with $git reset --hard
+
+

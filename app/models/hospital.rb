@@ -1,5 +1,7 @@
 class Hospital < ActiveRecord::Base
   has_many :facilities
+  has_many :visiting_hours
+  has_many :clinical_service_types
 
  #ensure certain fields are populated
  validates_presence_of :full_name, :phone, :address, :image
